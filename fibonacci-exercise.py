@@ -25,6 +25,7 @@ fib.append(n)
 # or you could repeat as long as there are too few items in the list (what type of loop is that?)
 # You might want to refresh your memory by creating a simple loop of the type you want first
 
+#Uses while to check how long the list is
 while len(fib) <= 49:
     n = fib[-1] + fib[-2]
     fib.append(n)
