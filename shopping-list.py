@@ -19,3 +19,33 @@ There is no automated checking on this one
 """
 
 shopping_list = []
+
+#Uses while loop to continually check for new items
+while True:
+    #Asks what the user wants to do
+    action = input("What would you like to do? \n 1. View shopping list \n 2. Add item to shopping list \n 3. Delete item in shopping list \n 4. Exit edit mode \n\n")
+    #Displays list
+    if action == "1":
+        print(shopping_list, "\n")
+    #Adds desired item to list
+    elif action == "2":
+        new_item = input("What would you like to add to your shopping list? \n\n")
+        shopping_list.append(new_item)
+    #Deletes desired item from list
+    elif action == "3":
+        deleted_item = input("What item would you like to delete? \n\n")
+        #Checks if deleted item is actually on the list
+        try:
+            shopping_list.remove(deleted_item)
+        except ValueError:
+            print("Sorry, that is not an item on the list \n\n")
+    #Exits edit mode
+    elif action == "4":
+        break
+    #Stops any unknown action
+    else:
+        print("Sorry, that is not a valid action \n\n")
+
+#Prints shopping list outside of edit mode
+print("This is your current shopping list:", shopping_list)
+
