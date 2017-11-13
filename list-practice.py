@@ -6,7 +6,8 @@ If you're correct, you'll get a message in the terminal saying "Your string_list
 
 # On the line below, create a list named string_list containing 7 strings
 
-
+#Created a list of school subjects
+string_list = ['English', 'History', 'Math', 'Spanish', 'Fitness', 'Chemistry', 'Physics']
 
 
 

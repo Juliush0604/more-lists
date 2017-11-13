@@ -13,21 +13,23 @@ the first 50 terms of the fibonacci sequence, starting with 0
 fib = [0, 1]
 
 # TIP: How can you refer to the last item in a list? Print the last item in the list called fib
-
+print(fib[-1])
 # TIP: How about the second to last item?
-
+print(fib[-2])
 # TIP: How could you use the two items you've already accessed to generate the next term? Print the next term of the fibonacci sequence
-
+n = fib[-1] + fib[-2]
 # TIP: Now that you've figured out how to generate the next item in your sequence, how would you add it to the end of your list
-
+fib.append(n)
 # TIP: You've gotten the next item in the sequence and added it to your list - now how do you repeat it?
 # There are two good options based on your current knowledge - you could repeat a certain number of times (what type of loop is that?)
 # or you could repeat as long as there are too few items in the list (what type of loop is that?)
 # You might want to refresh your memory by creating a simple loop of the type you want first
 
+while len(fib) <= 49:
+    n = fib[-1] + fib[-2]
+    fib.append(n)
 
-
-
+print(fib)
 
 
 # DON'T EDIT BELOW THIS LINE #
